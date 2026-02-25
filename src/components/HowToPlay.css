@@ -1,0 +1,307 @@
+/* HowToPlay.css */
+
+.how-to-play-section {
+  background: #030514;
+  min-height: 100vh;
+}
+
+/* Section Title */
+.section-title {
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title span {
+  color: #ffd700;
+}
+
+/* Journey Steps Panel */
+.journey-panel {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 227, 10, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  height: 100%;
+}
+
+.journey-title {
+  color: #ffd700;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Step Items */
+.step-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.step-item.active {
+  background: rgba(255, 227, 10, 0.05);
+}
+
+.step-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-title {
+  color: #FFFFFF;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.step-preview {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+/* Active Step Display */
+.active-step-panel {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 227, 10, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  height: 100%;
+}
+
+.active-step-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.active-step-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active-step-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.active-step-description {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0;
+}
+
+/* Detail Cards */
+.detail-card {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.03);
+  transition: transform 0.3s ease;
+}
+
+.detail-card:hover {
+  transform: translateY(-5px);
+}
+
+.detail-icon {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.detail-text {
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+/* Progress Bar */
+.progress-container {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.progress-label {
+  color: #ffd700;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.progress-count {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+}
+
+.progress {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #ffd700, #e36414, #fca311);
+  transition: width 0.3s ease;
+}
+
+/* Quick Stats Cards */
+.quick-stat-card {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  background: rgba(255, 215, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.quick-stat-card:hover {
+  transform: scale(1.05);
+}
+
+.stat-icon {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.stat-title {
+  color: #FFFFFF;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.stat-value {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+/* Pro Tips Section */
+.pro-tips {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.pro-tips-title {
+  color: #ffd700;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.tip-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tip-item:last-child {
+  margin-bottom: 0;
+}
+
+.tip-icon {
+  font-size: 0.75rem;
+  color: #fca311;
+}
+
+.tip-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+/* Feature Cards Row */
+.features-row {
+  margin-top: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .active-step-title {
+    font-size: 1.5rem;
+  }
+  
+  .journey-panel,
+  .active-step-panel {
+    padding: 1rem;
+  }
+  
+  .step-item {
+    padding: 0.75rem;
+  }
+  
+  .step-icon-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .active-step-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .detail-card {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Animation Classes */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}

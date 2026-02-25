@@ -1,0 +1,115 @@
+
+
+.features-badge {
+  display: inline-block;
+  background: rgba(255, 227, 10, 0.1);
+  border: 1px solid rgba(255, 227, 10, 0.3);
+  border-radius: 100px;
+  color: #ffd700;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Heading styles */
+.features-heading {
+  font-size: calc(1.5rem + 1.5vw);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+  text-shadow: 0 0 20px rgba(255, 227, 10, 0.2);
+}
+
+.text-gold {
+  color: #ffd700;
+}
+
+.text-orange {
+  color: #e36414;
+}
+
+/* Subheading styles */
+.features-subheading {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Divider styles */
+.features-divider {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #ffd700, #e36414, #fca311);
+  border-radius: 2px;
+  margin: 1rem auto 0;
+}
+
+/* Feature card styles */
+.feature-card {
+  padding: 1.5rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 227, 10, 0.3);
+  backdrop-filter: blur(4px);
+  max-width: 350px;
+  width: 100%;
+  transition: all 0.3s ease;
+  cursor: default;
+  height: 100%;
+}
+
+/* Hover effects using CSS */
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+  border-color: #ffd700;
+}
+
+/* Focus state for keyboard navigation */
+.feature-card:focus-visible {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  border-color: #ffd700;
+  outline: 2px solid #ffd700;
+  outline-offset: 2px;
+}
+
+/* Mobile/touch optimization */
+@media (hover: hover) and (pointer: fine) {
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+    border-color: #ffd700;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .feature-card:active {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    border-color: #ffd700;
+    transition: transform 0.1s ease;
+  }
+}
+
+/* Feature icon styles */
+.feature-icon {
+  font-size: 2.5rem;
+}
+
+/* Feature title styles */
+.feature-title {
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #ffd700;
+}
+
+/* Feature description styles */
+.feature-description {
+  color: #fff;
+  opacity: 0.8;
+  margin-bottom: 0;
+}

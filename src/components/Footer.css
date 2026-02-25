@@ -1,0 +1,332 @@
+/* Footer.css */
+
+.footer-section {
+  position: relative;
+  width: 100%;
+  background: #030514;
+  border-top: 1px solid rgba(255, 227, 10, 0.1);
+  margin-top: auto;
+  overflow: hidden;
+}
+
+/* Background Gradients */
+.footer-bg-gradient {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.footer-bg-gradient-1 {
+  left: 0;
+  background: radial-gradient(circle at 0% 100%, rgba(255, 227, 10, 0.03) 0%, transparent 50%);
+}
+
+.footer-bg-gradient-2 {
+  right: 0;
+  background: radial-gradient(circle at 100% 0%, rgba(227, 100, 20, 0.03) 0%, transparent 50%);
+}
+
+.footer-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Brand Section */
+.brand-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.brand-logo {
+  height: 60px;
+  width: auto;
+  margin-right: 1rem;
+  filter: drop-shadow(0 0 20px rgba(255, 227, 10, 0.3));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.brand-logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 25px rgba(255, 227, 10, 0.5));
+}
+
+.brand-title {
+  font-size: calc(1.3rem + 0.6vw);
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #FFFFFF;
+  text-shadow: 0 0 20px rgba(255, 227, 10, 0.2);
+  letter-spacing: -1px;
+}
+
+.text-gold {
+  color: #ffd700;
+}
+
+.text-orange {
+  color: #e36414;
+}
+
+.brand-tagline {
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.8;
+  max-width: 500px;
+  margin-bottom: 1.5rem;
+}
+
+/* Stats Section */
+.stats-wrapper {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-icon {
+  font-size: 1.5rem;
+  color: #ffd700; /* Moved from inline style */
+}
+
+.stat-value {
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-top: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Newsletter Card */
+.newsletter-card {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 227, 10, 0.1);
+  backdrop-filter: blur(8px);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.newsletter-card:hover {
+  border-color: rgba(255, 227, 10, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.newsletter-title {
+  color: #FFFFFF;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.newsletter-text {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1.5rem;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.newsletter-input {
+  flex: 1;
+  background: transparent;
+  border: 1px solid rgba(255, 227, 10, 0.2);
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 0.75rem;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
+.newsletter-input:focus {
+  border-color: #ffd700;
+  box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+  outline: none;
+}
+
+.newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.newsletter-button {
+  background: #ffd700;
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.newsletter-button:hover {
+  background: #e36414;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(227, 100, 20, 0.3);
+}
+
+.newsletter-button:focus-visible {
+  outline: 2px solid #ffd700;
+  outline-offset: 2px;
+}
+
+.newsletter-button:active {
+  transform: translateY(0);
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 227, 10, 0.1);
+  border-radius: 50%;
+  color: var(--social-color);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background: var(--social-color);
+  color: #FFFFFF;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.social-link:focus-visible {
+  outline: 2px solid #ffd700;
+  outline-offset: 2px;
+  transform: translateY(-3px);
+}
+
+/* Copyright Section */
+.copyright-text {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+}
+
+.heart-icon {
+  color: #ffd700;
+  font-size: 0.75rem;
+  margin: 0 0.25rem;
+  animation: heartbeat 1.5s ease infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+/* Footer Divider */
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #ffd700, #e36414, #fca311, transparent);
+  margin-top: 1rem;
+}
+
+/* Mobile/Touch Optimizations */
+@media (hover: hover) and (pointer: fine) {
+  .social-link:hover {
+    transform: translateY(-5px);
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .social-link:active {
+    background: var(--social-color);
+    color: #FFFFFF;
+    transform: translateY(-3px);
+    transition: transform 0.1s ease;
+  }
+  
+  .newsletter-button:active {
+    background: #e36414;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .text-md-end {
+    text-align: center !important;
+    margin-top: 1rem;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+
+  .brand-wrapper {
+    justify-content: center;
+  }
+
+  .brand-tagline {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .stats-wrapper {
+    justify-content: center;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-wrapper {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .brand-logo {
+    height: 50px;
+  }
+}
+
+/* Reduced Motion Preference */
+@media (prefers-reduced-motion: reduce) {
+  .brand-logo,
+  .newsletter-button,
+  .social-link,
+  .heart-icon {
+    animation: none;
+    transition: none;
+  }
+  
+  .social-link:hover {
+    transform: none;
+  }
+}
