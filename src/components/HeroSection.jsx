@@ -77,17 +77,17 @@ export default function HeroSection() {
   }, []);
 
   const features = [
-    { icon: <FaBolt />, text: 'Break Gates', color: '#ffd700' },
+    { icon: <FaBolt />, text: 'Break Gates', color: 'var(--primary);' },
     { icon: <FaClock />, text: 'Beat Clock', color: '#e36414' },
     { icon: <FaFlag />, text: 'Level 01', color: '#fca311' }
   ];
 
   const floatingIcons = [
-    { Icon: FaCar, top: '15%', left: '5%', delay: 0, color: '#ffd700' },
+    { Icon: FaCar, top: '15%', left: '5%', delay: 0, color: 'var(--primary);' },
     { Icon: FaRocket, top: '70%', left: '90%', delay: 2, color: '#e36414' },
     { Icon: FaBrain, top: '80%', left: '10%', delay: 1, color: '#fca311' },
     { Icon: FaTrophy, top: '25%', left: '85%', delay: 3, color: '#ffe30a' },
-    { Icon: FaClock, top: '45%', left: '15%', delay: 4, color: '#ffd700' }
+    { Icon: FaClock, top: '45%', left: '15%', delay: 4, color: 'var(--primary);' }
   ];
 
   return (
@@ -227,7 +227,7 @@ export default function HeroSection() {
               <div
                 key={index}
                 className="feature-card"
-                style={{ '--feature-color': feature.color } }
+                style={{ '--feature-color': feature.color ,width:'175px'} }
               >
                 <span className="feature-icon" style={{ color: feature.color }}>
                   {feature.icon}

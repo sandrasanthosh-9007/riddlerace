@@ -15,7 +15,7 @@
 }
 
 .section-title span {
-  color: #ffd700;
+  color: var(--primary);
 }
 
 /* Journey Steps Panel */
@@ -29,7 +29,7 @@
 }
 
 .journey-title {
-  color: #ffd700;
+  color: var(--primary);
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
   font-weight: 600;
@@ -151,7 +151,7 @@
 }
 
 .progress-label {
-  color: #ffd700;
+  color: var(--primary);
   font-size: 0.875rem;
   font-weight: 600;
 }
@@ -170,7 +170,7 @@
 
 .progress-bar {
   height: 100%;
-  background: linear-gradient(90deg, #ffd700, #e36414, #fca311);
+  background: linear-gradient(90deg, var(--primary), var(--seconadry), var(--amber));
   transition: width 0.3s ease;
 }
 
@@ -214,7 +214,7 @@
 }
 
 .pro-tips-title {
-  color: #ffd700;
+  color: var(--primary);
   font-weight: 600;
   margin-bottom: 1rem;
   font-size: 1rem;
@@ -233,7 +233,7 @@
 
 .tip-icon {
   font-size: 0.75rem;
-  color: #fca311;
+  color: var(--amber);
 }
 
 .tip-text {

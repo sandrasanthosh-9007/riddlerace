@@ -1,7 +1,8 @@
 * {
- --gold: #ffd700;
---orange: #e36414;
+ --primary: #ffd700;
+--secondary: #e36414;
 --amber: #fca311;
+
 }
 
 body {

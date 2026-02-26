@@ -17,8 +17,8 @@ import {
   FaMedal,
   FaUsers
 } from 'react-icons/fa';
-// import FeatureCard from './FeatureCard';
-import './HowToPlay.css'; // Import the CSS file
+
+import './HowToPlay.css'; 
 
 const HowToPlay = () => {
   const [activeStep, setActiveStep] = useState(0);
@@ -29,7 +29,7 @@ const HowToPlay = () => {
       title: "Create Profile",
       description: "Sign up and customize your neon racer with unique colors and accessories",
       details: ["Choose your avatar", "Pick a team color", "Select starting boost"],
-      color: "#ffd700"
+      color: "var(--primary);"
     },
     {
       icon: <FaFlag />,
@@ -43,7 +43,7 @@ const HowToPlay = () => {
       title: "Answer Gates",
       description: "Each checkpoint presents a challenge - answer to proceed",
       details: ["Multiple choice questions", "Timed responses", "Increasing difficulty"],
-      color: "#fca311"
+      color: "var(--amber)"
     },
     {
       icon: <FaBolt />,
@@ -57,7 +57,7 @@ const HowToPlay = () => {
       title: "Win Prizes",
       description: "Earn rewards, unlock new cars, and climb the leaderboards",
       details: ["Daily challenges", "Season rewards", "Exclusive items"],
-      color: "#ffd700"
+      color: "var(--primary);"
     }
   ];
 
@@ -67,7 +67,7 @@ const HowToPlay = () => {
       title: "Time Attack Mode",
       desc: "Race against the clock for high scores",
       stats: "60 sec rounds",
-      color: "#ffd700"
+      color: "var(--primary);"
     },
     {
       icon: <FaBrain />,
@@ -81,7 +81,7 @@ const HowToPlay = () => {
       title: "Speed Multiplier",
       desc: "Chain answers for bonus speed",
       stats: "Up to 5x boost",
-      color: "#fca311"
+      color: "var(--amber)"
     }
   ];
 
@@ -179,7 +179,7 @@ const HowToPlay = () => {
                 <Row className="g-3">
                   <Col xs={6}>
                     <div className="quick-stat-card">
-                      <FaMedal className="stat-icon" style={{ color: '#ffd700' }} />
+                      <FaMedal className="stat-icon" style={{ color: 'var(--primary);' }} />
                       <h6 className="stat-title">Quick Match</h6>
                       <p className="stat-value">Join in 5 seconds</p>
                     </div>
@@ -200,7 +200,7 @@ const HowToPlay = () => {
                     <p className="tip-text">Answer in under 3s for double boost</p>
                   </div>
                   <div className="tip-item">
-                    <FaStar className="tip-icon" style={{ color: '#ffd700' }} />
+                    <FaStar className="tip-icon" style={{ color: 'var(--primary);' }} />
                     <p className="tip-text">5 correct answers = shield activation</p>
                   </div>
                 </div>

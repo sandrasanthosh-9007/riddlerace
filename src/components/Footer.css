@@ -64,11 +64,11 @@
 }
 
 .text-gold {
-  color: #ffd700;
+  color: var( --primary);
 }
 
 .text-orange {
-  color: #e36414;
+  color: var( --secondary);
 }
 
 .brand-tagline {
@@ -90,7 +90,7 @@
 
 .stat-icon {
   font-size: 1.5rem;
-  color: #ffd700; /* Moved from inline style */
+  color: var( --primary); 
 }
 
 .stat-value {
@@ -151,7 +151,7 @@
 }
 
 .newsletter-input:focus {
-  border-color: #ffd700;
+  border-color: var( --primary);
   box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
   outline: none;
 }
@@ -161,7 +161,7 @@
 }
 
 .newsletter-button {
-  background: #ffd700;
+  background: var( --primary);
   color: #000000;
   border: none;
   border-radius: 8px;
@@ -173,14 +173,14 @@
 }
 
 .newsletter-button:hover {
-  background: #e36414;
+  background: var( --secondary);
   color: #FFFFFF;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(227, 100, 20, 0.3);
 }
 
 .newsletter-button:focus-visible {
-  outline: 2px solid #ffd700;
+  outline: 2px solid var( --primary);
   outline-offset: 2px;
 }
 
@@ -217,7 +217,7 @@
 }
 
 .social-link:focus-visible {
-  outline: 2px solid #ffd700;
+  outline: 2px solid var( --primary);
   outline-offset: 2px;
   transform: translateY(-3px);
 }
@@ -230,7 +230,7 @@
 }
 
 .heart-icon {
-  color: #ffd700;
+  color: var( --primary);
   font-size: 0.75rem;
   margin: 0 0.25rem;
   animation: heartbeat 1.5s ease infinite;
@@ -245,7 +245,7 @@
 .footer-divider {
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #ffd700, #e36414, #fca311, transparent);
+  background: linear-gradient(90deg, transparent, var( --primary), var( --secondary),var(--amber ), transparent);
   margin-top: 1rem;
 }
 
@@ -265,7 +265,7 @@
   }
   
   .newsletter-button:active {
-    background: #e36414;
+    background: var( --secondary);
     color: #FFFFFF;
     transform: translateY(-2px);
   }
