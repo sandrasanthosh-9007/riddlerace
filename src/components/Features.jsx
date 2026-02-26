@@ -5,22 +5,19 @@ import './Features.css';
 const Features = () => {
   const features = [
     { 
-      icon: 'bi-stopwatch', 
-      color: '#e36414', 
+    
       title: 'Beat the Clock', 
       desc: 'Milliseconds matter. Race through gates before time runs out.', 
       bgColor: 'rgba(255, 227, 10, 0.1)' 
     },
     { 
-      icon: 'bi-sign-turn-slight-right', 
-      color: '#ffd700', 
+     
       title: 'Break the Gates', 
       desc: 'Crush knowledge barriers. Each correct answer = speed boost.', 
       bgColor: 'rgba(227, 100, 20, 0.1)' 
     },
     { 
-      icon: 'bi-trophy', 
-      color: '#fca311', 
+      
       title: 'Win Rewards', 
       desc: 'Earn points, unlock premium avatars and neon cars.', 
       bgColor: 'rgba(255, 227, 10, 0.1)' 
@@ -61,7 +58,7 @@ const Features = () => {
               }}
             >
               <div className="text-center">
-                <i className={`bi ${feature.icon} feature-icon`} style={{ color: feature.color }}></i>
+                
                 <h4 className="feature-title fw-bold mt-3">{feature.title}</h4>
                 <p className="feature-description">{feature.desc}</p>
               </div>
