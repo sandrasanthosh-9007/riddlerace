@@ -14,7 +14,7 @@ import {
 } from "react-icons/fa";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import { useRef, useEffect, useState, useCallback } from "react";
-import './Hero.css'; // Make sure this import is present
+import './Hero.css'; 
 
 export default function HeroSection() {
   const ref = useRef(null);

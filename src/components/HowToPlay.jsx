@@ -19,6 +19,7 @@ import {
 } from 'react-icons/fa';
 
 import './HowToPlay.css'; 
+import FeatureCards from './FeatureCards';
 
 const HowToPlay = () => {
   const [activeStep, setActiveStep] = useState(0);
@@ -209,7 +210,7 @@ const HowToPlay = () => {
           </Col>
         </Row>
 
-     
+        <FeatureCards />
         
       </Container>
     </section>

@@ -1,68 +1,60 @@
-/* Features Section Styles */
-.features-section {
-  padding: 3rem 0;
-  margin: 2rem 0;
-  margin-left: 55px;
-  margin-bottom: 5px;
- 
+/* Features Container */
+.features-container {
+  position: relative;
 }
 
-/* Section Badge */
-.features-badge {
+/* Feature Badge */
+.feature-badge {
+  display: inline-block;
   background: rgba(255, 227, 10, 0.1);
   border: 1px solid rgba(255, 227, 10, 0.3);
   border-radius: 100px;
-  color: var(--primary);
+  color: #ffd700;
   font-size: 0.9rem;
   letter-spacing: 2px;
   font-weight: 500;
   backdrop-filter: blur(4px);
-  display: inline-block;
   padding: 0.5rem 1.5rem;
   margin-bottom: 1rem;
 }
 
-/* Section Title */
-.features-title {
-  color: #FFFFFF;
-  text-shadow: 0 0 20px rgba(255, 227, 10, 0.2);
+/* Feature Heading */
+.feature-heading {
+  color: #ffd700;
   font-size: calc(1.5rem + 1.5vw);
-  font-weight: 700;
+  font-weight: bold;
   margin-bottom: 1rem;
+  text-shadow: 0 0 20px rgba(255, 227, 10, 0.2);
 }
 
-.features-title-highlight {
-  color: var(--primary);
+.gold-text {
+  color: #ffd700;
 }
 
-.features-title-accent {
-  color: var(--secondary);
+.orange-text {
+  color: #e36414;
 }
 
-/* Section Subtitle */
-.features-subtitle {
-  color: rgba(255, 255, 255, 0.7);
+/* Feature Subheading */
+.feature-subheading {
+  color: #FFFFFF;
   font-size: 1.1rem;
   max-width: 500px;
   margin: 0 auto;
 }
 
 /* Decorative Line */
-.features-divider {
+.decorative-line {
   width: 80px;
   height: 3px;
-  background: linear-gradient(90deg, var(--primary), var(--secondary), var(--amber));
+  background: linear-gradient(90deg, #ffd700, #e36414, #fca311);
   border-radius: 2px;
   margin: 1rem auto 0;
 }
 
 /* Feature Card */
 .feature-card {
-  padding: 1.5rem;
-  border-radius: 1.5rem;
-  height: 100%;
-  background: rgba(255, 227, 10, 0.1);
-  border: 1px solid rgba(255, 227, 10, 0.3);
+  border: 1px solid rgba(232, 208, 23, 0.3);
   backdrop-filter: blur(4px);
   max-width: 350px;
   width: 100%;
@@ -73,49 +65,24 @@
 .feature-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
-  border-color: var(--primary);
+  border-color: #ffd700;
+  color: #ffd700;
 }
 
 /* Feature Icon */
 .feature-icon {
+  color: #ffd700;
   font-size: 2.5rem;
 }
 
 /* Feature Title */
 .feature-title {
-  font-weight: 700;
+  color: #ffd700;
   margin-top: 1rem;
-  color: var(--primary);
 }
 
 /* Feature Description */
 .feature-description {
   color: #fff;
   opacity: 0.8;
-  margin-bottom: 0;
-}
-
-/* Utility Classes */
-.text-center {
-  text-align: center;
-}
-
-.justify-content-center {
-  justify-content: center;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .features-section {
-    padding: 2rem 0;
-    margin: 2rem 0;
-  }
-  
-  .features-subtitle {
-    font-size: 1rem;
-  }
-  
-  .feature-card {
-    max-width: 100%;
-  }
 }
