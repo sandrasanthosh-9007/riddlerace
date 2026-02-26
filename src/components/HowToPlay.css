@@ -1,5 +1,6 @@
 /* HowToPlay.css */
 
+
 .how-to-play-section {
   background: #030514;
   min-height: 100vh;
@@ -170,7 +171,7 @@
 
 .progress-bar {
   height: 100%;
-  background: linear-gradient(90deg, var(--primary), var(--seconadry), var(--amber));
+  background: linear-gradient(90deg,  #FFD700, #FFA500, #FFC107);
   transition: width 0.3s ease;
 }
 

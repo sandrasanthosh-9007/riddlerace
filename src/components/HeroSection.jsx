@@ -227,7 +227,7 @@ export default function HeroSection() {
               <div
                 key={index}
                 className="feature-card"
-                style={{ '--feature-color': feature.color ,width:'175px'} }
+                style={{ '--feature-color': feature.color,   width: '175px'} }
               >
                 <span className="feature-icon" style={{ color: feature.color }}>
                   {feature.icon}

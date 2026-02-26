@@ -29,7 +29,7 @@ const HowToPlay = () => {
       title: "Create Profile",
       description: "Sign up and customize your neon racer with unique colors and accessories",
       details: ["Choose your avatar", "Pick a team color", "Select starting boost"],
-      color: "var(--primary);"
+      color: "var(--primary)"
     },
     {
       icon: <FaFlag />,
@@ -57,7 +57,7 @@ const HowToPlay = () => {
       title: "Win Prizes",
       description: "Earn rewards, unlock new cars, and climb the leaderboards",
       details: ["Daily challenges", "Season rewards", "Exclusive items"],
-      color: "var(--primary);"
+      color: "var(--primary)"
     }
   ];
 
@@ -67,7 +67,7 @@ const HowToPlay = () => {
       title: "Time Attack Mode",
       desc: "Race against the clock for high scores",
       stats: "60 sec rounds",
-      color: "var(--primary);"
+      color: "var(--primary)"
     },
     {
       icon: <FaBrain />,
@@ -179,7 +179,7 @@ const HowToPlay = () => {
                 <Row className="g-3">
                   <Col xs={6}>
                     <div className="quick-stat-card">
-                      <FaMedal className="stat-icon" style={{ color: 'var(--primary);' }} />
+                      <FaMedal className="stat-icon" style={{ color: 'var(--primary)' }} />
                       <h6 className="stat-title">Quick Match</h6>
                       <p className="stat-value">Join in 5 seconds</p>
                     </div>
@@ -200,7 +200,7 @@ const HowToPlay = () => {
                     <p className="tip-text">Answer in under 3s for double boost</p>
                   </div>
                   <div className="tip-item">
-                    <FaStar className="tip-icon" style={{ color: 'var(--primary);' }} />
+                    <FaStar className="tip-icon" style={{ color: 'var(--primary)' }} />
                     <p className="tip-text">5 correct answers = shield activation</p>
                   </div>
                 </div>
