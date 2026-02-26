@@ -239,19 +239,7 @@ export default function HeroSection() {
             ))}
           </motion.div>
 
-          {/* Bottom decoration */}
-          <motion.div 
-            className="hero-decoration"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 0.5 }}
-            transition={{ duration: 0.8, delay: 0.9 }}
-          >
-            <div className="decoration-bolts">
-              <span className="bolt gold">⚡</span>
-              <span className="bolt orange">⚡</span>
-              <span className="bolt amber">⚡</span>
-            </div>
-          </motion.div>
+        
         </Container>
 
 
