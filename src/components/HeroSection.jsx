@@ -182,7 +182,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             <img 
-              src="./src/assets/logo.png" 
+              src="./public/assets/logo.png" 
               alt="Riddle Race Logo"
               className={`hero-logo ${logoLoaded ? 'loaded' : 'loading'}`}
               onLoad={() => setLogoLoaded(true)}

@@ -47,7 +47,7 @@ const Footer = () => {
             <div className="pe-lg-5">
               <div className="brand-wrapper">
                 <img 
-                  src="./src/assets/logo.png"
+                  src="./public/assets/logo.png"
                   alt="Riddle Race Logo"
                   className="brand-logo"
                 />

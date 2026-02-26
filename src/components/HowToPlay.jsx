@@ -17,7 +17,7 @@ import {
   FaMedal,
   FaUsers
 } from 'react-icons/fa';
-import FeatureCard from './FeatureCard';
+// import FeatureCard from './FeatureCard';
 import './HowToPlay.css'; // Import the CSS file
 
 const HowToPlay = () => {
